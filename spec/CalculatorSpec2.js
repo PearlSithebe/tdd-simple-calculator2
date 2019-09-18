@@ -52,15 +52,15 @@ describe("Calculator", function() {
 
      it ("should take a single number as an argument.That argument is called the slot number. Also implement get_slot for getting the value from a memory slot.", function(){
         expect (calculator.add(1,2)).toEqual(3)
-        expect (calculator.set_slot(1)).toEqual(3)
-        expect (calculator.get_slot(1)).toEqual(3)
+        expect (calculator.setslot(1)).toEqual(3)
+        expect (calculator.getslot(1)).toEqual(3)
 
      })
      it ("should allow memory slots as parameters", function(){
         expect (calculator.add(1,2)).toEqual(3)
-        expect (calculator.set_slot(1)).toEqual(3)
-        expect (calculator.get_slot(1)).toEqual(3)
-        expect (calculator.add(calculator.set_slot(1),5)).toEqual(8)
+        expect (calculator.setslot(1)).toEqual(3)
+        expect (calculator.getslot(1)).toEqual(3)
+        expect (calculator.add(calculator.setslot(1),5)).toEqual(8)
 
      })
      })
